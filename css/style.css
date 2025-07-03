@@ -1,42 +1,52 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height:300px; 
+  padding-top: 100px;
+  flex-direction: column;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color:white;
-    
+header {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+  background-color: #040c14;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  left: 0;
 }
 button {
-    padding: 10px;
-    font-size: 16px;
-    margin: 5px;
-}
-input{
-    padding: 5px;
-    max-width: 5px;
-}
-footer {
-    background-color: #040c14;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    padding: 10px;
-    left: 0;
+    color: rgb(0, 0, 0);
+     border-radius: 18px;
+    cursor: grab;
+
   }
-  header {
-    background-color: black;
-    color: white;
-    font-size: 14px;
-    padding: 5px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    width: 100vw;
+  .botoes{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-self: center;
+    width: 200px;
+    height: 70px;
   }
-  

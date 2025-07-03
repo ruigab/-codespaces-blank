@@ -1,41 +1,74 @@
+/* Resetando algumas propriedades padrão */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+/* Corpo da página */
+body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color:white;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
 }
+
+/* Estilo do título */
+h1 {
+    font-size: 2.5rem;
+    color: #2d2d2d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
 button {
-    padding: 10px;
-    font-size: 16px;
-    margin: 5px;
-}
-input{
-    padding: 5px;
-    max-width: 5px;
-}
-footer {
-    background-color: #040c14;
+    background-color: #0c0e0c;
     color: white;
-    text-align: center;
-    font-style: italic;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: grab;
+    transition: background-color 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #147ebb;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Estilo da lista */
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilo dos itens da lista */
+ul li {
+    background-color: #ffffff;
+    margin: 5px 0;
     padding: 10px;
-    left: 0;
-  }
-  header {
-    background-color: black;
-    color: white;
-    font-size: 14px;
-    padding: 5px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    width: 100vw;
-  }
-  
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Link de volta */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #0044ff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
